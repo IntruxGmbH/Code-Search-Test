@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_uib_screen_test_values">
+    <sys_uib_screen_test_values action="INSERT_OR_UPDATE">
+        <macroponent/>
+        <macroponent_config/>
+        <screen display_value="Post Incident Report SNC [Code Search]">2649a987c30a3294de14d8477d013145</screen>
+        <sys_class_name>sys_uib_screen_test_values</sys_class_name>
+        <sys_created_by>markus.kraus@intrux.ch</sys_created_by>
+        <sys_created_on>2025-12-30 18:28:30</sys_created_on>
+        <sys_id>6a49a987c30a3294de14d8477d0131a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Code Search Test App" source="x_1799548_cs_test">8698648bc34afe54de14d8477d0131c0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Code Search Test App">8698648bc34afe54de14d8477d0131c0</sys_scope>
+        <sys_update_name>sys_uib_screen_test_values_6a49a987c30a3294de14d8477d0131a1</sys_update_name>
+        <sys_updated_by>markus.kraus@intrux.ch</sys_updated_by>
+        <sys_updated_on>2025-12-30 18:28:30</sys_updated_on>
+    </sys_uib_screen_test_values>
+</record_update>

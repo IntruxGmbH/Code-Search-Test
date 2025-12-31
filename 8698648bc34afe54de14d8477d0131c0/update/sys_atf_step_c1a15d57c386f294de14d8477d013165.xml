@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <callable_outputs/>
+        <copied_from/>
+        <description>Run Server Side Validation Script</description>
+        <display_name>Run Server Side Script</display_name>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes>Validate the Classic Studio fix is implemented and the script is using the latest version</notes>
+        <order>1</order>
+        <step_config display_value="Run Server Side Script">41de4a935332120028bc29cac2dc349a</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>markus.kraus@intrux.ch</sys_created_by>
+        <sys_created_on>2025-12-31 11:32:56</sys_created_on>
+        <sys_id>c1a15d57c386f294de14d8477d013165</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Run Server Side Script</sys_name>
+        <sys_package display_value="Code Search Test App" source="x_1799548_cs_test">8698648bc34afe54de14d8477d0131c0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Code Search Test App">8698648bc34afe54de14d8477d0131c0</sys_scope>
+        <sys_update_name>sys_atf_step_c1a15d57c386f294de14d8477d013165</sys_update_name>
+        <sys_updated_by>markus.kraus@intrux.ch</sys_updated_by>
+        <sys_updated_on>2025-12-31 11:52:32</sys_updated_on>
+        <table/>
+        <test display_value="ITX: Code Search Classic Studio Fix">5e7a899fc306f294de14d8477d013126</test>
+        <timeout/>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="delete_multiple" query="document_key=c1a15d57c386f294de14d8477d013165"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>c1a15d57c386f294de14d8477d013165</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>markus.kraus@intrux.ch</sys_created_by>
+        <sys_created_on>2025-12-31 11:32:56</sys_created_on>
+        <sys_id>89c3199fc386f294de14d8477d0131ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>markus.kraus@intrux.ch</sys_updated_by>
+        <sys_updated_on>2025-12-31 11:32:56</sys_updated_on>
+        <value>3.1</value>
+        <variable display_value="Jasmine version">42f2564b73031300440211d8faf6a777</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>c1a15d57c386f294de14d8477d013165</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>markus.kraus@intrux.ch</sys_created_by>
+        <sys_created_on>2025-12-31 11:32:56</sys_created_on>
+        <sys_id>cdc3199fc386f294de14d8477d0131ba</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>markus.kraus@intrux.ch</sys_updated_by>
+        <sys_updated_on>2025-12-31 11:52:32</sys_updated_on>
+        <value>/* global GlideRecord */&#13;
+/* eslint no-undef: "error" */&#13;
+(function(outputs, steps, params, stepResult, assertEqual) {&#13;
+&#13;
+	const EXT_NAME = 'x_itx_codesearch.classic_studio_fix';&#13;
+	const extPointGr = new GlideRecord('sys_client_extension_point');&#13;
+	extPointGr.addQuery('api_name', EXT_NAME);&#13;
+	extPointGr.setLimit(1);&#13;
+	extPointGr.query();&#13;
+	if (!extPointGr.next()) {&#13;
+		stepResult.setOutputMessage(`No Extension Point with name '${EXT_NAME}' found`);&#13;
+		return false;&#13;
+	}&#13;
+&#13;
+&#13;
+	const extGr = new GlideRecord('sys_client_extension_instance');&#13;
+	extGr.addQuery('point', extPointGr.api_name);&#13;
+	extGr.addQuery('active', true);&#13;
+	extGr.addQuery('ui_script.global', true);&#13;
+	extGr.setLimit(1);&#13;
+	extGr.query();&#13;
+	if (!extGr.next()) {&#13;
+		stepResult.setOutputMessage(`No global Extension Point Implementation for '${extPointGr.api_name}' found`);&#13;
+		return false;&#13;
+	}&#13;
+&#13;
+	if (extGr.ui_script.script != extPointGr.example) {&#13;
+		stepResult.setOutputMessage(`Extension Point Implementation for ${extPointGr.api_name} uses an outdated script`);&#13;
+		return false;&#13;
+	}&#13;
+&#13;
+	return true;&#13;
+&#13;
+})(outputs, steps, params, stepResult, assertEqual); /* global outputs, steps, params, stepResult, assertEqual */</value>
+        <variable display_value="Test script">989d9e235324220002c6435723dc3484</variable>
+    </sys_variable_value>
+</record_update>

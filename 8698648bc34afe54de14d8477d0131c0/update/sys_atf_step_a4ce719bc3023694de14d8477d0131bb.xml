@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <callable_outputs/>
+        <copied_from/>
+        <description>Set the components on the page as follows:
+'Text &lt;input&gt; [sys_display.scope]' = 'Code Search Test App', Page area = 'default'
+'Text &lt;input&gt;: Term' = '{{Parameters.Term}}', Page area = 'Term'
+</description>
+        <display_name>Set Component Values (Custom UI)</display_name>
+        <inputs/>
+        <inputs/>
+        <mugshots_cache_json>{"67b0572b0bbb31a1a8179fea1e7b8e16":"{\"area\":\"default\",\"sn_atf_mugshot_short_description\":\"Text &lt;input&gt;: Term\",\"sn_atf_mugshot_long_description\":\"Text &lt;input&gt; [term]: Term with value Type a term\",\"methods\":[\"setValue\"],\"sn_atf_mugshot_label\":\"Term\",\"type\":\"text\",\"version\":\"26.0\",\"label_for_input\":{\"inner_text\":\"Term\"},\"sn_atf_mugshot_label_for_label_path\":\"Term\",\"interesting_element_path\":[\"body\",\"form\",\"input\"],\"get_value_result\":\"\",\"sn_atf_mugshot_tag_display_name\":\"Text &lt;input&gt;\",\"name\":\"term\",\"sn_atf_mugshot_value\":\"Type a term\",\"tag\":\"input\",\"isDisabled\":false,\"id\":\"term\",\"placeholder\":\"Type a term\",\"label_path\":[\"Term\"],\"hash\":\"67b0572b0bbb31a1a8179fea1e7b8e16\",\"html_value\":\"\"}","a14cac172958b1a4963347afb993490b":"{\"area\":\"default\",\"sn-atf-data-type-params\":\"{\\\"reference\\\":\\\"sys_scope\\\",\\\"reference_qual\\\":\\\"nameINbsm_action,cmn_map_page,content_block_programmatic,ecc_agent_script_include,kb_navons,process_step_approval,sysauto_script,sysevent_email_action,sysevent_email_template,sysevent_in_email_action,sysevent_script_action,sys_installation_exit,sys_processor,sys_relationship,sys_script,sys_script_ajax,sys_script_client,sys_script_include,sys_script_validator,sys_security_acl,sys_transform_map,sys_transform_script,sys_trigger,sys_ui_action,sys_ui_macro,sys_ui_page,sys_ui_policy,sys_ui_script,sys_ui_style,sys_widgets,wf_activity_definition,x_itx_codesearch_st_any,x_itx_codesearch_st_flow,x_itx_codesearch_st_flow_action,x_itx_codesearch_st_metadata\\\"}\",\"sn_atf_mugshot_short_description\":\"Text &lt;input&gt; [sys_display.scope]\",\"sn_atf_mugshot_long_description\":\"Text &lt;input&gt; [sys_display.scope]: Code Search Test App\",\"methods\":[\"setValue\"],\"sn_atf_mugshot_label\":\"sys_display.scope\",\"type\":\"text\",\"version\":\"26.0\",\"sn-atf-class\":\"builtin:ATF.BaseMacroReference\",\"sn_atf_mugshot_label_for_label_path\":\"\",\"interesting_element_path\":[\"body\",\"form\",\"input\"],\"get_value_result\":\"8698648bc34afe54de14d8477d0131c0\",\"sn_atf_mugshot_tag_display_name\":\"Text &lt;input&gt;\",\"data_type\":\"reference\",\"name\":\"sys_display.scope\",\"sn_atf_mugshot_value\":\"Code Search Test App\",\"tag\":\"input\",\"isDisabled\":false,\"id\":\"sys_display.scope\",\"label_path\":[\"default\"],\"hash\":\"a14cac172958b1a4963347afb993490b\",\"html_value\":\"Code Search Test App\",\"sn-atf-data-type\":\"reference\"}"}</mugshots_cache_json>
+        <notes>Search for &lt;term&gt;.</notes>
+        <order>2</order>
+        <step_config display_value="Set Component Values (Custom UI)">e5dd168473330300c79260bdfaf6a794</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>markus.kraus@intrux.ch</sys_created_by>
+        <sys_created_on>2025-12-31 14:43:20</sys_created_on>
+        <sys_id>a4ce719bc3023694de14d8477d0131bb</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Set Component Values (Custom UI)</sys_name>
+        <sys_package display_value="Code Search Test App" source="x_1799548_cs_test">8698648bc34afe54de14d8477d0131c0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Code Search Test App">8698648bc34afe54de14d8477d0131c0</sys_scope>
+        <sys_update_name>sys_atf_step_a4ce719bc3023694de14d8477d0131bb</sys_update_name>
+        <sys_updated_by>markus.kraus@intrux.ch</sys_updated_by>
+        <sys_updated_on>2025-12-31 14:56:29</sys_updated_on>
+        <table/>
+        <test display_value="ITX: Code Search - Flows">d4edbdd7c3023694de14d8477d0131fb</test>
+        <timeout/>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="delete_multiple" query="document_key=a4ce719bc3023694de14d8477d0131bb"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>a4ce719bc3023694de14d8477d0131bb</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>markus.kraus@intrux.ch</sys_created_by>
+        <sys_created_on>2025-12-31 14:43:20</sys_created_on>
+        <sys_id>755ff55fc3023694de14d8477d01317f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>markus.kraus@intrux.ch</sys_updated_by>
+        <sys_updated_on>2025-12-31 14:56:19</sys_updated_on>
+        <value>a14cac172958b1a4963347afb993490b=8698648bc34afe54de14d8477d0131c0^67b0572b0bbb31a1a8179fea1e7b8e16={{parameter['d4edbdd7c3023694de14d8477d0131fb'].u_term}}^EQ</value>
+        <variable display_value="Component values">d12fde8473330300c79260bdfaf6a7b5</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=a4ce719bc3023694de14d8477d0131bb"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>component_values</field>
+        <id>a4ce719bc3023694de14d8477d0131bb</id>
+        <sys_created_by>markus.kraus@intrux.ch</sys_created_by>
+        <sys_created_on>2025-12-31 14:43:20</sys_created_on>
+        <sys_id>b15ff55fc3023694de14d8477d01317f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>markus.kraus@intrux.ch</sys_updated_by>
+        <sys_updated_on>2025-12-31 14:56:19</sys_updated_on>
+        <table>var__m_atf_input_variable_e5dd168473330300c79260bdfaf6a794</table>
+        <value>a14cac172958b1a4963347afb993490b=8698648bc34afe54de14d8477d0131c0^67b0572b0bbb31a1a8179fea1e7b8e16={{parameter['d4edbdd7c3023694de14d8477d0131fb'].u_term}}^EQ</value>
+    </sys_element_mapping>
+</record_update>

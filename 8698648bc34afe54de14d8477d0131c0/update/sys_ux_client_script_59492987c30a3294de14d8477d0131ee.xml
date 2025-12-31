@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Post Incident Report SNC [Code Search]">3739e947c30a3294de14d8477d013105</macroponent>
+        <name>Handle Fetch Incident Related Data</name>
+        <preset/>
+        <required_translations>[]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ * @param {ApiHelpers} params.helpers
+ */
+function handler({
+    api,
+    event,
+    helpers,
+    imports
+}) {
+    if (api.data.fetch_incident_related_data.output != null) {
+        let timingsSchema = api.state.timingsSchema;
+        let incidentTimings = api.data.fetch_incident_related_data.output.incidentTimings;
+        let translatedLabels = api.data.fetch_incident_related_data.output.timelineLabels;
+
+        timingsSchema.forEach(function(time, index) {
+            time["label"] = translatedLabels[index];
+            time["value"]["value"] = incidentTimings[index];
+        });
+        api.setState('timingsSchema', JSON.parse(JSON.stringify(timingsSchema)));
+
+        let publishBy = api.data.fetch_incident_related_data.output.publishBy;
+        let pirState = api.data.fetch_incident_related_data.output.pirState;
+        if (publishBy == null || pirState == 'Published')
+            api.setState('hideAlert', true);
+        else {
+            api.setState('hideAlert', false);
+        }
+
+        let coAuthors = api.data.fetch_incident_related_data.output.coAuthors;
+        let authorData = [];
+
+        coAuthors.forEach(function(user, index) {
+            let obj = {
+                "user": "",
+                "imageSrc": ""
+            };
+            obj.user = user.user;
+            obj.imageSrc = user.imageSrc;
+
+            authorData.push(obj);
+        });
+        api.setState('authorObject', authorData);
+
+        const authorListData = [];
+        coAuthors.forEach(function(author, index) {
+            let obj = {
+                "userName": "",
+                "imageSrc": ""
+            };
+            obj.userName = author.user;
+            obj.imageSrc = author.imageSrc;
+
+            authorListData.push(obj);
+        });
+        api.setState('authorList', authorListData);
+
+        const selected = [];
+
+        coAuthors.forEach(function(user, index) {
+            let obj = {
+                "id": "",
+                "label": "",
+                "avatarProps": {
+                    "imageSrc": ""
+                }
+            };
+            obj.id = user.id;
+            obj.label = user.user;
+            obj.avatarProps = {};
+            obj.avatarProps.imageSrc = user.imageSrc;
+
+            selected.push(obj);
+        });
+        api.setState('coAuthorsSelected', selected);
+
+        const cardDetails = api.data.fetch_incident_related_data.output.relatedRecords;
+        api.setState('cardDetails', cardDetails);
+
+        const incidentSummary = api.data.fetch_incident_related_data.output.summary;
+        api.setState('incidentSummary', incidentSummary);
+
+        const accessPermission = api.data.fetch_incident_related_data.output.access_permission;
+        api.setState('accessPermission', accessPermission);
+    }
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>markus.kraus@intrux.ch</sys_created_by>
+        <sys_created_on>2025-12-30 18:28:25</sys_created_on>
+        <sys_id>59492987c30a3294de14d8477d0131ee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Handle Fetch Incident Related Data</sys_name>
+        <sys_package display_value="Code Search Test App" source="x_1799548_cs_test">8698648bc34afe54de14d8477d0131c0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Code Search Test App">8698648bc34afe54de14d8477d0131c0</sys_scope>
+        <sys_update_name>sys_ux_client_script_59492987c30a3294de14d8477d0131ee</sys_update_name>
+        <sys_updated_by>markus.kraus@intrux.ch</sys_updated_by>
+        <sys_updated_on>2025-12-30 18:28:25</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

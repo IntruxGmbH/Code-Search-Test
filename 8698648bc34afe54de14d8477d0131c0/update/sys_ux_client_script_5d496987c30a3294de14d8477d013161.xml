@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Post Incident Report SNC [Code Search]">3739e947c30a3294de14d8477d013105</macroponent>
+        <name>alert_1/content</name>
+        <preset/>
+        <required_translations>[
+    {
+        "message": "Publish post incident report by {0}."
+    },
+    {
+        "message": "PIR SLA {0} is approaching. Publish post incident report by {1}."
+    },
+    {
+        "message": "Publish post incident report as soon as possible."
+    }
+]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {TransformApiHelpers} params.helpers
+ */
+function evaluateProperty({
+    api,
+    helpers
+}) {
+    if (api.data.fetch_incident_related_data.output == null)
+        return;
+    if (api.data.fetch_incident_related_data.output.alert == 'info') {
+        return helpers.translateSync('Publish post incident report by {0}.', api.data.fetch_incident_related_data.output.publishBy);
+    } else if (api.data.fetch_incident_related_data.output.alert == 'warning') {
+        return helpers.translateSync('PIR SLA {0} is approaching. Publish post incident report by {1}.', [api.data.fetch_incident_related_data.output.pir_sla, api.data.fetch_incident_related_data.output.publishBy]);
+    } else if (api.data.fetch_incident_related_data.output.alert == 'critical') {
+        return helpers.translateSync('Publish post incident report as soon as possible.');
+    }
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>markus.kraus@intrux.ch</sys_created_by>
+        <sys_created_on>2025-12-30 18:28:25</sys_created_on>
+        <sys_id>5d496987c30a3294de14d8477d013161</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>alert_1/content</sys_name>
+        <sys_package display_value="Code Search Test App" source="x_1799548_cs_test">8698648bc34afe54de14d8477d0131c0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Code Search Test App">8698648bc34afe54de14d8477d0131c0</sys_scope>
+        <sys_update_name>sys_ux_client_script_5d496987c30a3294de14d8477d013161</sys_update_name>
+        <sys_updated_by>markus.kraus@intrux.ch</sys_updated_by>
+        <sys_updated_on>2025-12-30 18:28:25</sys_updated_on>
+        <target>macroponent</target>
+        <type>transform</type>
+    </sys_ux_client_script>
+</record_update>

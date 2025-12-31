@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <callable_outputs/>
+        <copied_from/>
+        <description>Click the component: 'Link &lt;a&gt;: MidServerScriptInclude', Page area: 'default'</description>
+        <display_name>Click Component (Custom UI)</display_name>
+        <inputs/>
+        <mugshots_cache_json>{"42d96ff8bd2aa5cad843f69cc87ab1db":"{\"area\":\"default\",\"sn_atf_mugshot_short_description\":\"Link &lt;a&gt;: MidServerScriptInclude\",\"inner_text\":\"MidServerScriptInclude\",\"sn_atf_mugshot_long_description\":\"Link &lt;a&gt;: MidServerScriptInclude\",\"methods\":[\"click\"],\"sn_atf_mugshot_label\":\"MidServerScriptInclude\",\"type\":\"\",\"version\":\"26.0\",\"sn_atf_mugshot_label_for_label_path\":\"\",\"interesting_element_path\":[\"body\",\"app-explorer\",\"a\"],\"get_value_result\":\"MidServerScriptInclude\",\"sn_atf_mugshot_tag_display_name\":\"Link &lt;a&gt;\",\"sn_atf_mugshot_value\":\"\",\"tag\":\"a\",\"isDisabled\":false,\"label_path\":[\"default\"],\"hash\":\"42d96ff8bd2aa5cad843f69cc87ab1db\"}"}</mugshots_cache_json>
+        <notes>Open any Form so that the global UI Script is loaded.</notes>
+        <order>3</order>
+        <step_config display_value="Click Component (Custom UI)">def25c4b73730300c79260bdfaf6a700</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>markus.kraus@intrux.ch</sys_created_by>
+        <sys_created_on>2025-12-31 13:25:30</sys_created_on>
+        <sys_id>533de557c30ef294de14d8477d013144</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Click Component (Custom UI)</sys_name>
+        <sys_package display_value="Code Search Test App" source="x_1799548_cs_test">8698648bc34afe54de14d8477d0131c0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Code Search Test App">8698648bc34afe54de14d8477d0131c0</sys_scope>
+        <sys_update_name>sys_atf_step_533de557c30ef294de14d8477d013144</sys_update_name>
+        <sys_updated_by>markus.kraus@intrux.ch</sys_updated_by>
+        <sys_updated_on>2025-12-31 14:24:10</sys_updated_on>
+        <table/>
+        <test display_value="ITX: Code Search Classic Studio Fix">5e7a899fc306f294de14d8477d013126</test>
+        <timeout/>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="delete_multiple" query="document_key=533de557c30ef294de14d8477d013144"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>533de557c30ef294de14d8477d013144</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>markus.kraus@intrux.ch</sys_created_by>
+        <sys_created_on>2025-12-31 13:25:31</sys_created_on>
+        <sys_id>4a8dad97c30ef294de14d8477d0131e4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>markus.kraus@intrux.ch</sys_updated_by>
+        <sys_updated_on>2025-12-31 13:25:31</sys_updated_on>
+        <value>42d96ff8bd2aa5cad843f69cc87ab1db</value>
+        <variable display_value="Component">ee05588b73730300c79260bdfaf6a749</variable>
+    </sys_variable_value>
+</record_update>

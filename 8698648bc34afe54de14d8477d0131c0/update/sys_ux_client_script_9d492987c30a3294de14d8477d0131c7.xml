@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes>c6a4ead553361110c85addeeff7b1231</includes>
+        <macroponent display_value="Post Incident Report SNC [Code Search]">3739e947c30a3294de14d8477d013105</macroponent>
+        <name>Set Selected Date Time For The Custom Event</name>
+        <preset/>
+        <required_translations>[]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ * @param {ApiHelpers} params.helpers
+ */
+
+function handler({
+    api,
+    event,
+    helpers,
+    imports
+}) {
+    const {
+        getNowDateTime,
+        getFormattedDateText
+    } =
+    imports["sn_sow.SOWDateTimeHelper"]();
+    const {
+        NowDateTime
+    } = imports['sn_uxf.core_libraries']();
+    const inputDateTime = event.payload.value;
+    let customEventValid = JSON.parse(JSON.stringify(api.state.customEventValid));
+    let nowDateTimeObj = NowDateTime(inputDateTime).format('YYYY-MM-DD HH:mm:ss') + '';
+    if (nowDateTimeObj === "Invalid Date") {
+        customEventValid.isDateTimeValid = false;
+        api.setState("customEventValid", customEventValid);
+        return;
+    } else {
+        customEventValid.isDateTimeValid = true;
+        api.setState("customEventValid", customEventValid);
+    }
+    let customEvent = api.state.customEvent;
+    customEvent.formattedDateTime = inputDateTime;
+    const nowDateTime = getNowDateTime(inputDateTime, api.context.session.user.dateFormat + " " + api.context.session.user.timeFormat, api.context.session.user.timeZone);
+    customEvent.timestamp = getFormattedDateText(nowDateTime, "UTC", `YYYY-MM-DD HH:mm:ss`);
+    api.setState("customEvent", customEvent);
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>markus.kraus@intrux.ch</sys_created_by>
+        <sys_created_on>2025-12-30 18:28:25</sys_created_on>
+        <sys_id>9d492987c30a3294de14d8477d0131c7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Set Selected Date Time For The Custom Event</sys_name>
+        <sys_package display_value="Code Search Test App" source="x_1799548_cs_test">8698648bc34afe54de14d8477d0131c0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Code Search Test App">8698648bc34afe54de14d8477d0131c0</sys_scope>
+        <sys_update_name>sys_ux_client_script_9d492987c30a3294de14d8477d0131c7</sys_update_name>
+        <sys_updated_by>markus.kraus@intrux.ch</sys_updated_by>
+        <sys_updated_on>2025-12-30 18:28:25</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

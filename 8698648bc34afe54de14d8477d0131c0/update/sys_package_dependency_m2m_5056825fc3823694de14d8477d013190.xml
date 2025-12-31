@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_package_dependency_m2m">
+    <sys_package_dependency_m2m action="INSERT_OR_UPDATE">
+        <dependency display_value="Automated Test Framework - Custom UI" source="com.glide.automated_testing_impl.custom_ui">a289677b04f12210559073c06a02f76d</dependency>
+        <min_version>1.0.0</min_version>
+        <sys_created_by>markus.kraus@intrux.ch</sys_created_by>
+        <sys_created_on>2025-12-31 15:13:48</sys_created_on>
+        <sys_id>5056825fc3823694de14d8477d013190</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="Code Search Test App" source="x_1799548_cs_test">8698648bc34afe54de14d8477d0131c0</sys_package>
+        <sys_updated_by>markus.kraus@intrux.ch</sys_updated_by>
+        <sys_updated_on>2025-12-31 15:13:48</sys_updated_on>
+    </sys_package_dependency_m2m>
+</record_update>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Intrux Code Search Test">d36c91dbc30af294de14d8477d013182</application>
+        <assessment/>
+        <device_type/>
+        <filter table="sys_atf_test">sys_scope=8698648bc34afe54de14d8477d0131c0^active=true^EQ<item display_table="sys_scope" display_value="Code Search Test App" endquery="false" field="sys_scope" goto="false" newquery="false" operator="=" or="false" value="8698648bc34afe54de14d8477d0131c0"/>
+            <item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>ATF</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>sys_atf_test</name>
+        <order>200</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <require_confirmation>true</require_confirmation>
+        <roles/>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>markus.kraus@intrux.ch</sys_created_by>
+        <sys_created_on>2025-12-31 14:36:45</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>14adf1d7c3023694de14d8477d01319f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ATF</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Code Search Test App" source="x_1799548_cs_test">8698648bc34afe54de14d8477d0131c0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Code Search Test App">8698648bc34afe54de14d8477d0131c0</sys_scope>
+        <sys_update_name>sys_app_module_14adf1d7c3023694de14d8477d01319f</sys_update_name>
+        <sys_updated_by>markus.kraus@intrux.ch</sys_updated_by>
+        <sys_updated_on>2025-12-31 14:36:45</sys_updated_on>
+        <timeline_page/>
+        <title>ATF</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+</record_update>
