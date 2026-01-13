@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="" label="Example Table" language="en" table="x_1799548_cs_test_m2m_task">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element/>
+            <help/>
+            <hint/>
+            <label>Example Table</label>
+            <language>en</language>
+            <name>x_1799548_cs_test_m2m_task</name>
+            <plural>Example Tables</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>markus.kraus@intrux.ch</sys_created_by>
+            <sys_created_on>2026-01-10 18:55:57</sys_created_on>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>Example Table</sys_name>
+            <sys_package display_value="Code Search Test App" source="x_1799548_cs_test">8698648bc34afe54de14d8477d0131c0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Code Search Test App">8698648bc34afe54de14d8477d0131c0</sys_scope>
+            <sys_update_name>sys_documentation_x_1799548_cs_test_m2m_task__en</sys_update_name>
+            <sys_updated_by>markus.kraus@intrux.ch</sys_updated_by>
+            <sys_updated_on>2026-01-10 18:56:13</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

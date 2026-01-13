@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="3f0996a6c31a7e10de14d8477d0131b4" label="Example Table" max_length="40" name="x_1799548_cs_test_m2m_task" type="collection">
+        <element attributes="encode_utf8=false" label="From" max_length="32" name="to" reference="task" type="reference"/>
+        <element attributes="encode_utf8=false" label="To" max_length="32" name="from" reference="task" type="reference"/>
+        <element choice="1" label="Choice" max_length="40" name="choice" type="choice">
+            <choice>
+                <element hint="code_search_choice_hint" inactive_on_update="false" label="code_search_choice_label" value="code_search_choice_value"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="from"/>
+        </index>
+        <index name="index2">
+            <element name="to"/>
+        </index>
+    </element>
+</database>
