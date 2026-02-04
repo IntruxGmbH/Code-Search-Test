@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_uib_screen_test_values">
+    <sys_uib_screen_test_values action="INSERT_OR_UPDATE">
+        <macroponent_config>{
+    "table": "task",
+    "sysId": "1c41718df4a722104f3475eb2440bc61",
+    "query": "",
+    "extraParams": "",
+    "views": "",
+    "selectedTab": ""
+}</macroponent_config>
+        <screen display_value="Default">87c8e126837af6504967cbb6feaad310</screen>
+        <sys_class_name>sys_uib_screen_test_values</sys_class_name>
+        <sys_created_by>markus.kraus@intrux.ch</sys_created_by>
+        <sys_created_on>2026-02-04 11:56:29</sys_created_on>
+        <sys_id>c3c8e126837af6504967cbb6feaad319</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Code Search Test App" source="x_1799548_cs_test">8698648bc34afe54de14d8477d0131c0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Code Search Test App">8698648bc34afe54de14d8477d0131c0</sys_scope>
+        <sys_update_name>sys_uib_screen_test_values_c3c8e126837af6504967cbb6feaad319</sys_update_name>
+        <sys_updated_by>markus.kraus@intrux.ch</sys_updated_by>
+        <sys_updated_on>2026-02-04 11:56:29</sys_updated_on>
+    </sys_uib_screen_test_values>
+</record_update>

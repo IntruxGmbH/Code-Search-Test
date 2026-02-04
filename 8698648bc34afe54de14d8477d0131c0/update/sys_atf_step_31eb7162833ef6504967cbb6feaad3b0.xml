@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <callable_outputs/>
+        <copied_from display_value="Click Component (Custom UI)">ffefb5dfc3023694de14d8477d0131e3</copied_from>
+        <description>Click the component: 'Button &lt;button&gt;: OK', Page area: 'default'</description>
+        <display_name>Click Component (Custom UI)</display_name>
+        <inputs/>
+        <mugshots_cache_json>{"5b753b4877dd9b298da6bf1949941064":"{\"area\":\"default\",\"sn_atf_mugshot_short_description\":\"Button &lt;button&gt;: OK\",\"inner_text\":\"OK\",\"sn_atf_mugshot_long_description\":\"Button &lt;button&gt; [ok_button]: OK\",\"methods\":[\"click\"],\"sn_atf_mugshot_label\":\"OK\",\"index\":1,\"type\":\"submit\",\"version\":\"26.0\",\"sn_atf_mugshot_label_for_label_path\":\"\",\"interesting_element_path\":[\"body\",\"form\",\"button\"],\"get_value_result\":\"OK\",\"sn_atf_mugshot_tag_display_name\":\"Button &lt;button&gt;\",\"sn_atf_mugshot_value\":\"OK\",\"tag\":\"button\",\"isDisabled\":false,\"id\":\"ok_button\",\"label_path\":[\"default\"],\"hash\":\"5b753b4877dd9b298da6bf1949941064\",\"html_value\":\"\"}"}</mugshots_cache_json>
+        <notes>Execute the search.</notes>
+        <order>3</order>
+        <step_config display_value="Click Component (Custom UI)">def25c4b73730300c79260bdfaf6a700</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>markus.kraus@intrux.ch</sys_created_by>
+        <sys_created_on>2026-02-04 13:19:58</sys_created_on>
+        <sys_id>31eb7162833ef6504967cbb6feaad3b0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Click Component (Custom UI)</sys_name>
+        <sys_package display_value="Code Search Test App" source="x_1799548_cs_test">8698648bc34afe54de14d8477d0131c0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Code Search Test App">8698648bc34afe54de14d8477d0131c0</sys_scope>
+        <sys_update_name>sys_atf_step_31eb7162833ef6504967cbb6feaad3b0</sys_update_name>
+        <sys_updated_by>markus.kraus@intrux.ch</sys_updated_by>
+        <sys_updated_on>2026-02-04 13:19:58</sys_updated_on>
+        <table/>
+        <test display_value="ITX: Code Search - UI Builder">2deb356e83faf6504967cbb6feaad33e</test>
+        <timeout/>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="delete_multiple" query="document_key=31eb7162833ef6504967cbb6feaad3b0"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>31eb7162833ef6504967cbb6feaad3b0</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>markus.kraus@intrux.ch</sys_created_by>
+        <sys_created_on>2026-02-04 13:19:58</sys_created_on>
+        <sys_id>31eb7162833ef6504967cbb6feaad3b2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>markus.kraus@intrux.ch</sys_updated_by>
+        <sys_updated_on>2026-02-04 13:19:58</sys_updated_on>
+        <value>5b753b4877dd9b298da6bf1949941064</value>
+        <variable display_value="Component">ee05588b73730300c79260bdfaf6a749</variable>
+    </sys_variable_value>
+</record_update>

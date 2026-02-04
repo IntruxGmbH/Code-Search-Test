@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_test">
+    <sys_atf_test action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <copied_from display_value="ITX: Code Search - Flows">d4edbdd7c3023694de14d8477d0131fb</copied_from>
+        <description>Validate that flow Triggers, Inline Scripts, Field Values, ... are searched (and found).</description>
+        <enable_parameterized_testing>true</enable_parameterized_testing>
+        <fail_on_server_error>true</fail_on_server_error>
+        <name>ITX: Code Search - UI Builder</name>
+        <parameters/>
+        <remember/>
+        <sn_atf_tg_generated>false</sn_atf_tg_generated>
+        <sys_class_name>sys_atf_test</sys_class_name>
+        <sys_created_by>markus.kraus@intrux.ch</sys_created_by>
+        <sys_created_on>2026-02-04 13:19:56</sys_created_on>
+        <sys_id>2deb356e83faf6504967cbb6feaad33e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>ITX: Code Search - UI Builder</sys_name>
+        <sys_package display_value="Code Search Test App" source="x_1799548_cs_test">8698648bc34afe54de14d8477d0131c0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Code Search Test App">8698648bc34afe54de14d8477d0131c0</sys_scope>
+        <sys_update_name>sys_atf_test_2deb356e83faf6504967cbb6feaad33e</sys_update_name>
+        <sys_updated_by>markus.kraus@intrux.ch</sys_updated_by>
+        <sys_updated_on>2026-02-04 13:20:10</sys_updated_on>
+        <test_origin>manual</test_origin>
+    </sys_atf_test>
+    <sys_variable_value action="delete_multiple" query="document_key=2deb356e83faf6504967cbb6feaad33e"/>
+</record_update>

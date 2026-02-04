@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_scriptlet">
+    <sys_ux_data_broker_scriptlet action="INSERT_OR_UPDATE">
+        <api_name>x_1799548_cs_test.CodeSearchATFScriptletDataBroker</api_name>
+        <batch_exclude>false</batch_exclude>
+        <description/>
+        <mutates_server_data>false</mutates_server_data>
+        <name>CodeSearchATFScriptletDataBroker</name>
+        <output_schema/>
+        <private>true</private>
+        <props>[]</props>
+        <required_translations>[ ]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[function transform(input) {
+	// code_search_ui_builder_scriptlet_data_broker
+	return null;
+}]]></script>
+        <sys_class_name>sys_ux_data_broker_scriptlet</sys_class_name>
+        <sys_created_by>markus.kraus@intrux.ch</sys_created_by>
+        <sys_created_on>2026-02-04 12:04:07</sys_created_on>
+        <sys_id>064a65aa837af6504967cbb6feaad31a</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>CodeSearchATFScriptletDataBroker</sys_name>
+        <sys_package display_value="Code Search Test App" source="x_1799548_cs_test">8698648bc34afe54de14d8477d0131c0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Code Search Test App">8698648bc34afe54de14d8477d0131c0</sys_scope>
+        <sys_update_name>sys_ux_data_broker_scriptlet_064a65aa837af6504967cbb6feaad31a</sys_update_name>
+        <sys_updated_by>markus.kraus@intrux.ch</sys_updated_by>
+        <sys_updated_on>2026-02-04 12:46:41</sys_updated_on>
+    </sys_ux_data_broker_scriptlet>
+    <sys_translated_text action="delete_multiple" query="documentkey=064a65aa837af6504967cbb6feaad31a"/>
+</record_update>
